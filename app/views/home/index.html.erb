@@ -13,7 +13,7 @@
     <%= f.submit 'Create Post', class: 'btn btn-primary' %>
   </div>
 <% end %>
-
+<% if user_signed_in? %>
 <div class="posts">
   <% @posts.each do |post| %>
     <section class="post">
@@ -37,3 +37,7 @@
   <% end %>
   <%= paginate @posts %>
 </div>
+<% else %>
+<a href="<%= new_user_session_path%>">
+<i class="fa fa-sign-in"></i></a>
+<% end %>
