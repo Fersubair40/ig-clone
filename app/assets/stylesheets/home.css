@@ -25,6 +25,7 @@
   margin: 8px;
 }
 .posts .post .user .avatar img {
+  height: 100%;
   width: 100%;
   border: 1px solid #efefef;
   border-radius: 50%;

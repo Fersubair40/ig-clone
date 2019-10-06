@@ -10,6 +10,7 @@ gem 'jquery-rails'
 gem 'font-awesome-rails'
 gem 'devise'
 gem 'kaminari'
+gem "aws-sdk-s3", require: false
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server

@@ -15,11 +15,7 @@
           <button>Edit Profile</button>
         </a>
       </div>
-      <ul class="posts">
-        <li><span>12</span> <%= @posts.count %> </li>
-        <li><span>195</span> followers</li>
-        <li><span>345</span> following</li>
-      </ul>
+      
       <h2 class="name"> <%= current_user.name %> </h2>
       <%= link_to current_user.website, current_user.website, class: 'website' %>
     </div>
@@ -50,7 +46,9 @@
 <div class="user-images">
     <% @posts.each do |post| %>
     <div class="wrapper">
+      <%= link_to post_path(post) do %>
       <%= image_tag post.image %>
+      <% end %>
     </div>
     <% end %>
 </div>
