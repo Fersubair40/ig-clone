@@ -13,6 +13,7 @@
     <%= f.submit 'Create Post', class: 'btn btn-primary' %>
   </div>
 <% end %>
+
 <% if user_signed_in? %>
 <div class="posts">
   <% @posts.each do |post| %>

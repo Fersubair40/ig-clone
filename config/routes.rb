@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get 'home/index'
 
 
-  root to: 'users#edit'
+  root to: 'home#index'
 
   resources :users, only: [:show, :edit, :update]
   resources :posts, only: [:new, :create, :show, :destroy]
